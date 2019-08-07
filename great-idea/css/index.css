@@ -95,25 +95,38 @@ header {
 	background-color: #fff;
 	
 	box-shadow: 0 0 10px rgba(0,0,0,.1);
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center
 }
+
 section {
 	position: relative;
 	z-index: 1;
 }
+
+/* 
 header .inline, .intro .inline {
 	vertical-align: middle;
+} */
+
+nav {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
 }
+
 nav a {
-	display: inline-block;
 	font-size: 14px;
-	padding: 19px 55px;
+	padding: 19px 67px;
 	padding-left: 0;
-	margin-right: 5px;
 	color: grey;
 	text-decoration: none;
 
 	transition: all .3s ease-in-out;
 }
+
 nav a:hover {
 	color: lightskyblue;
 	text-shadow: 0 0 10px rgba(173,216,230,1);
@@ -123,7 +136,6 @@ nav a:hover {
 .logo {
 	background-repeat: no-repeat;
 	background-image: url(../img/logo.png);
-	margin-left: 47px;
 	width: 184px;
 	height: 36px;
 }
