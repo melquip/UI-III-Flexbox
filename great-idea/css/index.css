@@ -135,20 +135,29 @@ nav a:hover {
 
 .middle-img {
 	background-repeat: no-repeat;
+	background-position: bottom right;
 	background-image: url(../img/mid-page-accent.jpg);
 	width: 100%;
 	height: 182px;
-	background-position: bottom right;
 }
 
 .map-img {
 	margin-top: 40px;
 	background-size: cover;
 	background-repeat: no-repeat;
+	background-position: center;
 	background-image: url(../img/map.jpg);
 	width: 100%;
 	height: 250px;
+}
+
+.services-header-img {
+	background-size: cover;
+	background-repeat: no-repeat;
 	background-position: center;
+	background-image: url(../img/services-header.jpg);
+	width: 100%;
+	height: 200px;
 }
 
 .zoom {
@@ -242,7 +251,6 @@ p {
 .col2:nth-of-type(2) {
 	padding-left: 10px;
 }
-
 .col3:nth-last-of-type(3) {
 	padding-right: 15px;
 }
@@ -270,9 +278,6 @@ p {
 	flex-flow: row wrap;
 }
 
-.contact.detail .col2 {
-	flex: 1 1 50%;
-}
 .contact.detail .col2 a {
 	display: block;
 	padding-bottom: 10px;
@@ -288,3 +293,84 @@ footer {
 	line-height: 20px;
 }
 
+.services {
+	padding-bottom: 39px;
+	border-bottom: 1px solid #000;
+}
+.services h1 {
+	padding-top: 33px;
+	font-size: 26px;
+}
+.services p {
+	line-height: 20px;
+}
+.boxes {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	padding-top: 40px;
+
+	border-bottom: 1px solid #000;
+}
+.boxes .box.col2, .somefacts .col2 {
+	max-width: calc(50% - 18px);
+	flex: 1 1 calc(50% - 18px);
+}
+.boxes .box {
+	padding: 21px;
+	border: 1px solid black;
+	background-color: rgba(0,0,0,.08);
+	margin-bottom: 40px;
+	transition: all .3s ease-in-out;
+}
+.boxes .box:hover {
+	background-color: rgba(0,0,0,.12);
+	box-shadow: 0 0 10px rgba(0, 0, 0, .2)
+}
+.box p {
+	padding-top: 3px;
+	line-height: 20px;
+}
+.btn {
+	display: inline-block;
+	margin-top: 20px;
+	padding: 0 40px;
+	border: 1px solid black;
+	background-color: white;
+	border-radius: 5px;
+	font-size: 12px;
+	line-height: 32px;
+	color: black;
+	text-decoration: none;
+	transition: all .3s ease-in-out;
+}
+.btn:hover {
+	color: white;
+	background-color: black;
+}
+
+.somefacts {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 44px;
+	padding-bottom: 32px;
+}
+.somefacts .col2 {
+	padding: 0;
+}
+.somefacts p {
+	line-height: 20px;
+	padding-right: 20px;
+}
+.somefacts ul {
+	margin-top: 21px;
+}
+.somefacts ul li {
+	list-style-position: inside;
+	list-style-type: square;
+	line-height: 30px;
+}
+
+.somefacts + footer {
+	font-size: 16px;
+}
