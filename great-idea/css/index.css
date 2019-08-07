@@ -222,6 +222,7 @@ nav a:hover {
 	display: flex;
 	flex-flow: row wrap;
 }
+
 .about .col2, .about .col3 {
 	padding-top: 39px;
 	padding-bottom: 38px;
@@ -261,19 +262,22 @@ p {
 	padding-top: 22px;
 }
 
-.page2 {
+.contact.detail {
 	border-bottom: 1px solid black;
 	padding-bottom: 40px;
+
+	display: flex;
+	flex-flow: row wrap;
 }
 
-.page2 .inline {
-	vertical-align: top;
+.contact.detail .col2 {
+	flex: 1 1 50%;
 }
-.page2 .inline a {
+.contact.detail .col2 a {
 	display: block;
 	padding-bottom: 10px;
 }
-.page2 .inline.col2:nth-child(2) {
+.contact.detail .col2:nth-child(2) {
 	text-align: right;
 }
 
