@@ -67,7 +67,7 @@ h1, h2, h3, h4, h5 {
 
 .page {
 	margin: 0 auto;
-	width: 1024px;
+	width: 100%;
 	max-width: 1024px;
 	padding: 92px 74px 60px;
 
@@ -351,6 +351,7 @@ footer {
 
 .somefacts {
 	display: flex;
+	flex-flow: row wrap;
 	justify-content: space-between;
 	padding-top: 44px;
 	padding-bottom: 32px;
@@ -373,4 +374,18 @@ footer {
 
 .somefacts + footer {
 	font-size: 16px;
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+	.boxes .box.col2, .somefacts .col2 {
+		max-width: 100%;
+		flex: 1 1 100%;
+	}
+	
+	.somefacts img {
+		margin-top: 36px;
+	}
 }
