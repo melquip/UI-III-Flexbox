@@ -106,11 +106,6 @@ section {
 	z-index: 1;
 }
 
-/* 
-header .inline, .intro .inline {
-	vertical-align: middle;
-} */
-
 nav {
 	display: flex;
 	flex-flow: row nowrap;
@@ -177,12 +172,15 @@ nav a:hover {
 	padding-top: 40px;
 	padding-bottom: 78px;
 	border-bottom: 1px solid black;
+
+	display: flex;
+	align-items: center;
 }
-.intro .inline:first-child {
+.intro .col2:first-child {
 	text-align: center;
 	padding-left: 40px;
 }
-.intro .inline:last-child {
+.intro .col2:last-child {
 	padding-left: 58px;
 }
 .intro h1 {
@@ -213,6 +211,16 @@ nav a:hover {
 	font-size: 0;
 }
 
+.col2 {
+	width: 100%;
+	max-width: 50%;
+	flex-basis: 50%; 
+}
+.col3 {
+	width: 100%;
+	max-width: 33.3333%;
+	flex-basis: 33.3333%;
+}
 
 .inline {
 	display: inline-block;
